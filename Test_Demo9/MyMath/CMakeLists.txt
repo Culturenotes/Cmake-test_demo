@@ -6,7 +6,7 @@ aux_source_directory(. DIR_LIB_SRCS)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 # 生成动态链接库SHARED 静态库STATIC
-add_library (MathFunctions STATIC ${DIR_LIB_SRCS})
+add_library (MathFunctions SHARED ${DIR_LIB_SRCS})
 
 # 指定 MathFunctions 库的安装路径
 install (TARGETS MathFunctions DESTINATION lib)
